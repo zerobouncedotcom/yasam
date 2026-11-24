@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#fbfbfc" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta
+      name="description"
+      content="YaSam — личный план. Раскладывайте задачи по периодам и собирайте из них карты связей."
+    />
+    <title>Мой план · YaSam</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/mark.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="./assets/onest-cyrillic-wght-normal.woff2"
+    />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script type="module" src="./app.js?v=3"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержимому</a>
+    <div class="shell">
+      <aside id="sidebar" aria-label="Боковая панель"></aside>
+      <div class="workspace">
+        <header id="topbar"></header>
+        <main id="main" tabindex="-1">
+          <div id="page" aria-busy="true"><p>Открываем план…</p></div>
+        </main>
+      </div>
+    </div>
+    <nav id="mobile-nav" aria-label="Основные разделы"></nav>
+    <dialog
+      id="editor"
+      class="drawer"
+      aria-labelledby="editor-heading"
+    ></dialog>
+    <dialog id="popup" class="popup" aria-labelledby="popup-heading"></dialog>
+    <div id="status" role="status" aria-live="polite"></div>
+    <noscript>Включите JavaScript, чтобы открыть личный план.</noscript>
+  </body>
+</html>
